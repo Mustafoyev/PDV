@@ -1,0 +1,344 @@
+.hero {
+	position: relative;
+	padding: 109px 0 173px;
+	background-image: url('../images/adir-Cargo-Insurance.png');
+	background-repeat: no-repeat;
+	background-size: 635px 505px;
+	background-position: calc(50% + 302px) calc(50% + 7px);
+
+	&::after {
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		right: 0;
+		width: 40%;
+		height: 125%;
+		background-color: #0b7572;
+		content: '';
+	}
+}
+
+.hero__title-wrapper {
+	width: 100%;
+	max-width: 610px;
+}
+
+.hero__title {
+	margin: 0;
+	margin-bottom: 40px;
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 52px;
+	line-height: 125%;
+	color: #363738;
+}
+
+.hero__text-wrapper {
+	width: 100%;
+	max-width: 525px;
+}
+
+.hero__text {
+	margin: 0;
+	margin-bottom: 40px;
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: #6b6b6c;
+}
+
+.hero__link {
+	display: inline-block;
+	text-decoration: none;
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 150%;
+	color: #363738;
+	border-bottom: 3px solid #ffce50;
+}
+
+.hero__list {
+	position: absolute;
+	top: calc(50% + 330px);
+	width: 100%;
+	max-width: 1240px;
+	@include flex-starter;
+	@include list-starter;
+	padding: 40px;
+	background-color: #ffffff;
+	box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+	border-radius: 20px;
+}
+
+.hero__item {
+	position: relative;
+	padding: 116px 110px 16px 64px;
+	width: 33%;
+
+	&::before {
+		position: absolute;
+		top: 0px;
+		left: 64px;
+		width: 92px;
+		height: 92px;
+		background-image: url('../images/icon1.svg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		content: '';
+	}
+}
+
+.hero__item:nth-child(2)::before {
+	background-image: url('../images/icon2.svg');
+}
+
+.hero__item:nth-child(3)::before {
+	background-image: url('../images/icon3.svg');
+}
+
+.hero__item + .hero__item {
+	border-left: 1px solid #d7d7dd;
+}
+
+.item__title {
+	margin: 0;
+	margin-bottom: 16px;
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 135%;
+	color: #363738;
+}
+
+.item__text {
+	margin: 0;
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: #6b6b6c;
+}
+
+@include max-width(1170px) {
+	.hero__title-wrapper {
+		width: 100%;
+		max-width: 450px;
+	}
+
+	.hero__text-wrapper {
+		width: 100%;
+		max-width: 375px;
+	}
+
+	.hero__list {
+		width: 100%;
+		max-width: 1040px;
+	}
+}
+
+@include max-width(1000px) {
+	.hero {
+		padding: 80px 0 623px;
+		background-image: url('../images/adir-Cargo-tablet.png');
+		background-size: 690px 314px;
+		background-position: calc(50%) calc(50% + 173px);
+
+		&::after {
+			right: 0;
+			width: 20%;
+			height: 125%;
+		}
+	}
+
+	.hero__title-wrapper {
+		width: 100%;
+		max-width: 466px;
+	}
+
+	.hero__title {
+		font-size: 44px;
+	}
+
+	.hero__text-wrapper {
+		width: 100%;
+		max-width: 523px;
+	}
+
+	.hero__text {
+		margin-bottom: 61px;
+	}
+
+	.hero__list {
+		flex-direction: column;
+		align-items: center;
+		left: 0;
+		margin: 0 auto;
+		width: none;
+		max-width: none;
+		padding: 0;
+		padding-top: 41px;
+		background-color: none;
+		box-shadow: none;
+		border-radius: 0;
+	}
+
+	.hero__item {
+		position: relative;
+		margin: 0 auto;
+		padding: 35px 140px 47px 156px;
+		width: 100%;
+		max-width: 690px;
+		background: #ffffff;
+		box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
+		border-radius: 20px;
+
+		&::before {
+			top: 32px;
+			left: 32px;
+		}
+	}
+
+	.hero__item + .hero__item {
+		border-left: 0;
+		margin-top: 16px;
+	}
+}
+
+@include max-width(705px) {
+	.hero {
+		background-size: 650px 314px;
+	}
+
+	.hero__text-wrapper {
+		width: 100%;
+		max-width: 470px;
+	}
+
+	.hero__list {
+		align-items: center;
+	}
+
+	.hero__item {
+		width: 100%;
+		max-width: 670px;
+		margin: 0 auto;
+	}
+}
+
+@include max-width(685px) {
+	.hero {
+		padding: 75px 0 660px;
+		background-image: url('../images/adir-Cargo-mobile.png');
+		background-size: 345px 253px;
+		background-position: calc(50%) calc(50% + 30px);
+
+		&::after {
+			right: 0;
+			width: 100%;
+			height: 85%;
+		}
+	}
+
+	.hero__title-wrapper {
+		width: 100%;
+		max-width: 344px;
+	}
+
+	.hero__title {
+		margin-bottom: 32px;
+		font-size: 28px;
+		line-height: 125%;
+		color: #fff;
+	}
+
+	.hero__text-wrapper {
+		width: 100%;
+		max-width: 344px;
+	}
+
+	.hero__text {
+		margin-bottom: 32px;
+		font-size: 15px;
+		color: #fff;
+	}
+
+	.hero__link {
+		font-size: 15px;
+		color: #fff;
+	}
+
+	.hero__list {
+		position: absolute;
+		top: calc(50% + 185px);
+		right: 0;
+		left: 0;
+		width: 100%;
+		max-width: 345px;
+		margin: 0 auto;
+		flex-direction: column;
+		align-items: center;
+		padding: 24px 27px 32px 32px;
+		background-color: #ffffff;
+		box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+		border-radius: 20px;
+	}
+
+	.hero__item {
+		padding: 0;
+		padding-top: 132px;
+		width: 100%;
+		max-width: 286px;
+		border: 0;
+		border-radius: 0;
+		background-color: transparent;
+		box-shadow: none;
+
+		&::before {
+			top: 16px;
+			left: 4px;
+		}
+	}
+
+	.hero__item + .hero__item {
+		margin-top: 0;
+	}
+
+	.item__title {
+		margin-bottom: 12px;
+		font-size: 18px;
+	}
+
+	.item__text {
+		font-size: 15px;
+	}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min--moz-device-pixel-ratio: 2),
+	only screen and (-o-min-device-pixel-ratio: 2/1),
+	only screen and (min-device-pixel-ratio: 2),
+	only screen and (min-resolution: 192dpi),
+	only screen and (min-resolution: 2dppx) {
+	.hero {
+		background-image: url('../images/adir-Cargo-Insurance@2x.png');
+	}
+
+	@include max-width(1000px) {
+		.hero {
+			background-image: url('../images/adir-Cargo-tablet@2x.png');
+		}
+	}
+
+	@include max-width(685px) {
+		.hero {
+			background-image: url('../images/adir-Cargo-mobile@2x.png');
+		}
+	}
+}

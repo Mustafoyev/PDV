@@ -1,0 +1,120 @@
+.what {
+	background-image: url('../images/Rectangle8.png');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: calc(50% - 376px) calc(50% + 215px);
+}
+
+.what__inner {
+	position: relative;
+	padding: 148px 306px 185px 0;
+	background-image: url('../images/Rectangle10.png');
+	background-repeat: no-repeat, no-repeat;
+	background-size: 552px 454px;
+	background-position: calc(50% - 26px);
+
+	&::after {
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: -1;
+		width: 1040px;
+		height: 454px;
+		background-image: url('../images/Rectangle7.png');
+		background-repeat: no-repeat, no-repeat;
+		background-size: 100%;
+		content: '';
+	}
+}
+
+.what__title-wrapper {
+	width: 100%;
+	max-width: 362px;
+	text-align: start;
+}
+
+.what__title {
+	margin: 0;
+	text-align: start;
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 125%;
+	color: #ffffff;
+}
+
+.what__list {
+	position: absolute;
+	@include list-starter;
+	@include flex-starter;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 257px;
+}
+
+.what__item {
+	position: relative;
+	width: 100%;
+	max-width: 447px;
+	padding-left: 120px;
+
+	&:nth-child(1) {
+		margin-right: 140px;
+		margin-bottom: 64px;
+	}
+
+	&:nth-child(2) {
+		margin-bottom: 64px;
+	}
+
+	&:nth-child(3) {
+		margin-right: 140px;
+	}
+
+	&::before {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		width: 80px;
+		height: 80px;
+		background-image: url('../images/what-icon1.svg');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		content: '';
+	}
+
+	&:nth-child(2)::before {
+		background-image: url('../images/what-icon2.svg');
+	}
+
+	&:nth-child(3)::before {
+		background-image: url('../images/what-icon3.svg');
+	}
+
+	&:nth-child(4)::before {
+		background-image: url('../images/what-icon4.svg');
+	}
+}
+
+.what__item-title {
+	margin: 0;
+	margin-bottom: 16px;
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 135%;
+	color: #363738;
+}
+
+.what__item-text {
+	margin: 0;
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 150%;
+	color: #6b6b6c;
+}

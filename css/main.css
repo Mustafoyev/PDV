@@ -1,3 +1,24 @@
+/* exo-2-600 - latin */
+@font-face {
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/exo-2-v20-latin-600.woff2") format("woff2"), url("../fonts/exo-2-v20-latin-600.woff") format("woff");
+}
+/* pt-sans-regular - latin */
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/pt-sans-v17-latin-regular.woff2") format("woff2"), url("../fonts/pt-sans-v17-latin-regular.woff") format("woff");
+}
+/* pt-sans-700 - latin */
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/pt-sans-v17-latin-700.woff2") format("woff2"), url("../fonts/pt-sans-v17-latin-700.woff") format("woff");
+}
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
 ========================================================================== */
@@ -6,10 +27,8 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 html {
-  line-height: 1.15;
-  /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /* Sections
@@ -44,12 +63,9 @@ h1 {
  * 2. Show the overflow in Edge and IE.
  */
 hr {
-  box-sizing: content-box;
-  /* 1 */
-  height: 0;
-  /* 1 */
-  overflow: visible;
-  /* 2 */
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
 }
 
 /**
@@ -57,10 +73,8 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /* Text-level semantics
@@ -77,13 +91,10 @@ a {
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
  */
 abbr[title] {
-  border-bottom: none;
-  /* 1 */
-  text-decoration: underline;
-  /* 2 */
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
-  /* 2 */
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -101,10 +112,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
-  /* 1 */
-  font-size: 1em;
-  /* 2 */
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
 }
 
 /**
@@ -154,14 +163,10 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 1 */
-  line-height: 1.15;
-  /* 1 */
-  margin: 0;
-  /* 2 */
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
 }
 
 /**
@@ -229,18 +234,12 @@ fieldset {
  *    `fieldset` elements in all browsers.
  */
 legend {
-  box-sizing: border-box;
-  /* 1 */
-  color: inherit;
-  /* 2 */
-  display: table;
-  /* 1 */
-  max-width: 100%;
-  /* 1 */
-  padding: 0;
-  /* 3 */
-  white-space: normal;
-  /* 1 */
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
 }
 
 /**
@@ -263,10 +262,8 @@ textarea {
  */
 [type=checkbox],
 [type=radio] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
@@ -282,10 +279,8 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
 }
 
 /**
@@ -300,10 +295,8 @@ textarea {
  * 2. Change font properties to `inherit` in Safari.
  */
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
 }
 
 /* Interactive
@@ -336,4 +329,681 @@ template {
  */
 [hidden] {
   display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin: 0;
+  font-family: "Exo 2", "PT sans", sans-serif;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media only screen and (max-width: 1220px) and (min-width: 686px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+@media only screen and (max-width: 685px) and (min-width: 375px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+.hero {
+  position: relative;
+  padding: 109px 0 173px;
+  background-image: url("../images/adir-Cargo-Insurance.png");
+  background-repeat: no-repeat;
+  background-size: 635px 505px;
+  background-position: calc(50% + 302px) calc(50% + 7px);
+}
+.hero::after {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 125%;
+  background-color: #0b7572;
+  content: "";
+}
+
+.hero__title-wrapper {
+  width: 100%;
+  max-width: 610px;
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 125%;
+  color: #363738;
+}
+
+.hero__text-wrapper {
+  width: 100%;
+  max-width: 525px;
+}
+
+.hero__text {
+  margin: 0;
+  margin-bottom: 40px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #6b6b6c;
+}
+
+.hero__link {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #363738;
+  border-bottom: 3px solid #ffce50;
+}
+
+.hero__list {
+  position: absolute;
+  top: calc(50% + 330px);
+  width: 100%;
+  max-width: 1240px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding: 40px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+}
+
+.hero__item {
+  position: relative;
+  padding: 116px 110px 16px 64px;
+  width: 33%;
+}
+.hero__item::before {
+  position: absolute;
+  top: 0px;
+  left: 64px;
+  width: 92px;
+  height: 92px;
+  background-image: url("../images/icon1.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: "";
+}
+
+.hero__item:nth-child(2)::before {
+  background-image: url("../images/icon2.svg");
+}
+
+.hero__item:nth-child(3)::before {
+  background-image: url("../images/icon3.svg");
+}
+
+.hero__item + .hero__item {
+  border-left: 1px solid #d7d7dd;
+}
+
+.item__title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 135%;
+  color: #363738;
+}
+
+.item__text {
+  margin: 0;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #6b6b6c;
+}
+
+@media only screen and (max-width: 1170px) {
+  .hero__title-wrapper {
+    width: 100%;
+    max-width: 450px;
+  }
+  .hero__text-wrapper {
+    width: 100%;
+    max-width: 375px;
+  }
+  .hero__list {
+    width: 100%;
+    max-width: 1040px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .hero {
+    padding: 80px 0 623px;
+    background-image: url("../images/adir-Cargo-tablet.png");
+    background-size: 690px 314px;
+    background-position: 50% calc(50% + 173px);
+  }
+  .hero::after {
+    right: 0;
+    width: 20%;
+    height: 125%;
+  }
+  .hero__title-wrapper {
+    width: 100%;
+    max-width: 466px;
+  }
+  .hero__title {
+    font-size: 44px;
+  }
+  .hero__text-wrapper {
+    width: 100%;
+    max-width: 523px;
+  }
+  .hero__text {
+    margin-bottom: 61px;
+  }
+  .hero__list {
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    margin: 0 auto;
+    width: none;
+    max-width: none;
+    padding: 0;
+    padding-top: 41px;
+    background-color: none;
+    box-shadow: none;
+    border-radius: 0;
+  }
+  .hero__item {
+    position: relative;
+    margin: 0 auto;
+    padding: 35px 140px 47px 156px;
+    width: 100%;
+    max-width: 690px;
+    background: #ffffff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
+    border-radius: 20px;
+  }
+  .hero__item::before {
+    top: 32px;
+    left: 32px;
+  }
+  .hero__item + .hero__item {
+    border-left: 0;
+    margin-top: 16px;
+  }
+}
+@media only screen and (max-width: 705px) {
+  .hero {
+    background-size: 650px 314px;
+  }
+  .hero__text-wrapper {
+    width: 100%;
+    max-width: 470px;
+  }
+  .hero__list {
+    align-items: center;
+  }
+  .hero__item {
+    width: 100%;
+    max-width: 670px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 685px) {
+  .hero {
+    padding: 75px 0 660px;
+    background-image: url("../images/adir-Cargo-mobile.png");
+    background-size: 345px 253px;
+    background-position: 50% calc(50% + 30px);
+  }
+  .hero::after {
+    right: 0;
+    width: 100%;
+    height: 85%;
+  }
+  .hero__title-wrapper {
+    width: 100%;
+    max-width: 344px;
+  }
+  .hero__title {
+    margin-bottom: 32px;
+    font-size: 28px;
+    line-height: 125%;
+    color: #fff;
+  }
+  .hero__text-wrapper {
+    width: 100%;
+    max-width: 344px;
+  }
+  .hero__text {
+    margin-bottom: 32px;
+    font-size: 15px;
+    color: #fff;
+  }
+  .hero__link {
+    font-size: 15px;
+    color: #fff;
+  }
+  .hero__list {
+    position: absolute;
+    top: calc(50% + 185px);
+    right: 0;
+    left: 0;
+    width: 100%;
+    max-width: 345px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 27px 32px 32px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 20px;
+  }
+  .hero__item {
+    padding: 0;
+    padding-top: 132px;
+    width: 100%;
+    max-width: 286px;
+    border: 0;
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .hero__item::before {
+    top: 16px;
+    left: 4px;
+  }
+  .hero__item + .hero__item {
+    margin-top: 0;
+  }
+  .item__title {
+    margin-bottom: 12px;
+    font-size: 18px;
+  }
+  .item__text {
+    font-size: 15px;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url("../images/adir-Cargo-Insurance@2x.png");
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1000px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1000px), only screen and (min-resolution: 192dpi) and (max-width: 1000px), only screen and (min-resolution: 2dppx) and (max-width: 1000px) {
+  .hero {
+    background-image: url("../images/adir-Cargo-tablet@2x.png");
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 685px), only screen and (min-device-pixel-ratio: 2) and (max-width: 685px), only screen and (min-resolution: 192dpi) and (max-width: 685px), only screen and (min-resolution: 2dppx) and (max-width: 685px) {
+  .hero {
+    background-image: url("../images/adir-Cargo-mobile@2x.png");
+  }
+}
+.work {
+  padding: 485px 0 100px;
+}
+
+.work__title {
+  margin: 0;
+  margin-bottom: 32px;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 125%;
+  color: #363738;
+}
+
+.work__text-wrapper {
+  width: 100%;
+  max-width: 667px;
+  margin-bottom: 40px;
+}
+
+.work__text {
+  margin: 0;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #6b6b6c;
+}
+
+.work__content {
+  display: flex;
+  align-items: center;
+  align-items: baseline;
+}
+
+.work__formes {
+  margin-right: 140px;
+}
+
+.work__lable {
+  position: relative;
+  padding: 40px 123px 48px 40px;
+  display: block;
+  width: 100%;
+  max-width: 687px;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  color: #363738;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+}
+.work__lable::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-top: 31px solid transparent;
+  border-right: 96px solid #e9e9ec;
+  border-bottom: 31px solid #e9e9ec;
+  border-left: 96px solid transparent;
+  content: "";
+}
+
+.work__lable + .work__lable {
+  margin-top: 16px;
+}
+
+.work__lable-text {
+  width: 100%;
+  max-width: 466px;
+  margin-left: 58px;
+}
+
+.formes__text {
+  margin: 0;
+  margin-top: 24px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #6b6b6c;
+}
+
+.formes__input {
+  vertical-align: middle;
+  margin-right: 32px;
+  width: 24px;
+  height: 24px;
+}
+
+.work__static {
+  padding-bottom: 39px;
+  border-bottom: 3px solid #ffce50;
+}
+
+.work__static-str {
+  display: block;
+  margin-bottom: 8px;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  color: #363738;
+}
+
+.work__static-text {
+  margin: 0;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 140%;
+  color: #6b6b6c;
+}
+
+.work__static-span {
+  display: inline-block;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 54px;
+  line-height: 150%;
+  letter-spacing: 0.3em;
+  color: #363738;
+}
+
+@media only screen and (max-width: 873px) {
+  .work {
+    padding: 485px 0 88px;
+  }
+  .work__title {
+    font-size: 44px;
+  }
+  .work__text-wrapper {
+    margin-bottom: 48px;
+  }
+  .work__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .work__formes {
+    margin-right: 0;
+  }
+  .work__lable {
+    width: 100%;
+    max-width: 690px;
+  }
+  .work__static {
+    display: none;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .work__title {
+    font-size: 28px;
+  }
+  .work__text-wrapper {
+    margin-bottom: 0;
+  }
+  .work__text {
+    display: none;
+  }
+  .work__lable {
+    padding: 24px 24px 32px 56px;
+    width: 100%;
+    max-width: 500px;
+    font-size: 18px;
+  }
+  .work__lable::after {
+    display: none;
+  }
+  .work__lable-text {
+    width: 100%;
+    max-width: 250px;
+    margin-left: 58px;
+  }
+  .formes__text {
+    margin-top: 16px;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .work__lable-text {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+.what {
+  background-image: url("../images/Rectangle8.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: calc(50% - 376px) calc(50% + 215px);
+}
+
+.what__inner {
+  position: relative;
+  padding: 148px 306px 185px 0;
+  background-image: url("../images/Rectangle10.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 552px 454px;
+  background-position: calc(50% - 26px);
+}
+.what__inner::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  width: 1040px;
+  height: 454px;
+  background-image: url("../images/Rectangle7.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 100%;
+  content: "";
+}
+
+.what__title-wrapper {
+  width: 100%;
+  max-width: 362px;
+  text-align: start;
+}
+
+.what__title {
+  margin: 0;
+  text-align: start;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 125%;
+  color: #ffffff;
+}
+
+.what__list {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 257px;
+}
+
+.what__item {
+  position: relative;
+  width: 100%;
+  max-width: 447px;
+  padding-left: 120px;
+}
+.what__item:nth-child(1) {
+  margin-right: 140px;
+  margin-bottom: 64px;
+}
+.what__item:nth-child(2) {
+  margin-bottom: 64px;
+}
+.what__item:nth-child(3) {
+  margin-right: 140px;
+}
+.what__item::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  background-image: url("../images/what-icon1.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: "";
+}
+.what__item:nth-child(2)::before {
+  background-image: url("../images/what-icon2.svg");
+}
+.what__item:nth-child(3)::before {
+  background-image: url("../images/what-icon3.svg");
+}
+.what__item:nth-child(4)::before {
+  background-image: url("../images/what-icon4.svg");
+}
+
+.what__item-title {
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 135%;
+  color: #363738;
+}
+
+.what__item-text {
+  margin: 0;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #6b6b6c;
 }/*# sourceMappingURL=main.css.map */

@@ -1414,6 +1414,8 @@ main {
   .works__img {
     width: 345px;
     height: 222px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
   }
   .works__item-content {
     padding: 24px 0 24px 24px;

@@ -1136,7 +1136,7 @@ main {
   }
   .what__inner {
     padding: 0;
-    background-image: none;
+    background: none;
   }
   .what__inner::before {
     display: none;

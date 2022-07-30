@@ -199,9 +199,26 @@
 	}
 }
 
-@include max-width(370px) {
+@include max-width(375px) {
+	.work__lable {
+		font-family: 'Exo 2';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 18px;
+		line-height: 150%;
+		text-align: center;
+		color: #363738;
+	}
+
+	.formes__input {
+		margin-right: 16px;
+		margin-left: -36px;
+	}
+
 	.work__lable-text {
 		width: 100%;
 		max-width: 200px;
+		margin-left: 0;
+		text-align: center;
 	}
 }

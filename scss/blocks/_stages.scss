@@ -490,19 +490,19 @@
 	}
 }
 
-@include max-width(364px) {
+@include max-width(362px) {
 	.stages__inner {
 		&::before {
-			top: calc(50% - 251px);
-			left: calc(50% - 151px);
+			top: calc(50% - 284px);
+			left: calc(50% - 150px);
 			width: 52px;
 			height: 52px;
 			font-size: 30px;
 		}
 
 		&::after {
-			top: calc(50% + 15px);
-			left: calc(50% - 151px);
+			top: calc(50% + 3px);
+			left: calc(50% - 150px);
 			width: 52px;
 			height: 52px;
 			font-size: 30px;
@@ -511,8 +511,8 @@
 
 	.stages__title {
 		&::after {
-			top: calc(50% + 689px);
-			left: calc(50% - 151px);
+			top: calc(50% + 734px);
+			left: calc(50% - 150px);
 			width: 52px;
 			height: 52px;
 			font-size: 30px;

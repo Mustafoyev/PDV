@@ -1865,7 +1865,7 @@ main {
   .clients__inner::before {
     top: 0;
     left: 0;
-    width: 403px;
+    width: 340px;
     height: 515px;
     background-image: url("../images/clients-bg-mobile.png");
   }
@@ -2312,24 +2312,24 @@ main {
     font-size: 15px;
   }
 }
-@media only screen and (max-width: 364px) {
+@media only screen and (max-width: 362px) {
   .stages__inner::before {
-    top: calc(50% - 251px);
-    left: calc(50% - 151px);
+    top: calc(50% - 284px);
+    left: calc(50% - 150px);
     width: 52px;
     height: 52px;
     font-size: 30px;
   }
   .stages__inner::after {
-    top: calc(50% + 15px);
-    left: calc(50% - 151px);
+    top: calc(50% + 3px);
+    left: calc(50% - 150px);
     width: 52px;
     height: 52px;
     font-size: 30px;
   }
   .stages__title::after {
-    top: calc(50% + 689px);
-    left: calc(50% - 151px);
+    top: calc(50% + 734px);
+    left: calc(50% - 150px);
     width: 52px;
     height: 52px;
     font-size: 30px;

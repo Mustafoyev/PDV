@@ -2254,20 +2254,20 @@ main {
 }
 @media only screen and (max-width: 576px) {
   .stages {
-    padding: 64px 6px 64px 33px;
+    padding: 64px 6px 64px 15px;
   }
   .stages__inner {
     position: relative;
   }
   .stages__inner::before {
-    top: calc(50% - 285px);
+    top: calc(50% - 251px);
     left: calc(50% - 156px);
     width: 52px;
     height: 52px;
     font-size: 30px;
   }
   .stages__inner::after {
-    top: calc(50% + 3px);
+    top: calc(50% + 15px);
     left: calc(50% - 156px);
     width: 52px;
     height: 52px;
@@ -2278,14 +2278,14 @@ main {
     font-size: 28px;
   }
   .stages__title::after {
-    top: calc(50% + 733px);
+    top: calc(50% + 688px);
     left: calc(50% - 156px);
     width: 52px;
     height: 52px;
     font-size: 30px;
   }
   .stages__item {
-    padding: 24px 5px 32px 43px;
+    padding: 24px 5px 32px 33px;
     width: 100%;
     max-width: 306px;
     overflow: hidden;
@@ -2312,24 +2312,24 @@ main {
     font-size: 15px;
   }
 }
-@media only screen and (max-width: 362px) {
+@media only screen and (max-width: 364px) {
   .stages__inner::before {
-    top: calc(50% - 318px);
-    left: calc(50% - 144px);
+    top: calc(50% - 251px);
+    left: calc(50% - 151px);
     width: 52px;
     height: 52px;
     font-size: 30px;
   }
   .stages__inner::after {
-    top: calc(50% - 7px);
-    left: calc(50% - 144px);
+    top: calc(50% + 15px);
+    left: calc(50% - 151px);
     width: 52px;
     height: 52px;
     font-size: 30px;
   }
   .stages__title::after {
-    top: calc(50% + 778px);
-    left: calc(50% - 144px);
+    top: calc(50% + 689px);
+    left: calc(50% - 151px);
     width: 52px;
     height: 52px;
     font-size: 30px;

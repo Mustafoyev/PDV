@@ -1,0 +1,496 @@
+.clients__inner {
+	position: relative;
+	@include flex-starter;
+	align-items: baseline;
+	justify-content: center;
+	padding: 85px 67px 85px 81px;
+	background-color: #0b7572;
+
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 63px;
+		width: 703px;
+		height: 898px;
+		background-image: url('../images/clients-bg.png');
+		background-repeat: no-repeat;
+		background-size: 100%;
+		content: '';
+	}
+}
+
+.clients__wrapper {
+	width: 100%;
+	max-width: 377px;
+	margin-right: 100px;
+}
+
+.clients__title {
+	margin: 0;
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 48px;
+	line-height: 125%;
+	color: #ffffff;
+}
+
+// mobile-max-width-630px
+.clients__content-mobile {
+	display: none;
+	z-index: 1;
+	padding: 24px 16px;
+	width: 100%;
+	max-width: 345px;
+	background-color: #ffffff;
+	border-radius: 4px;
+}
+
+.clients__logo-mobile {
+	display: block;
+}
+
+.clients__content-center {
+	width: 100%;
+	max-width: 313px;
+	margin-top: 25px;
+	padding: 10px 0 10px 16px;
+	background-color: #0b7572;
+	border-radius: 2px;
+}
+
+.clients__content-center-item {
+	display: inline-block;
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 15px;
+	line-height: 150%;
+	color: #ffffff;
+}
+
+.clients__content-list {
+	@include list-starter;
+	padding: 18px 16px 32px 16px;
+	background-color: #f9f9fb;
+}
+
+.clients__content-item:nth-child(1) {
+	padding-bottom: 24px;
+}
+
+.clients__content-item:nth-child(2) {
+	padding: 16px 0;
+	border-top: 1px solid #d7d7dd;
+	border-bottom: 1px solid #d7d7dd;
+}
+
+.clients__content-item:nth-child(3) {
+	padding-top: 16px;
+}
+
+.clients__content-center-img {
+	display: flex;
+}
+
+.clients__content-mobile-wrapper {
+	width: 100%;
+	max-width: 169px;
+	margin-left: 16px;
+}
+
+.clients__mobile-text {
+	margin: 0;
+	margin-bottom: 12px;
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 135%;
+	color: #6b6b6c;
+}
+
+.clients__mobile-money {
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 135%;
+	text-decoration: none;
+	color: #363738;
+}
+
+.clients__content-adres-wrapper {
+	width: 100%;
+	max-width: 263px;
+}
+
+.clients__content-adstr {
+	display: inline-block;
+	margin-bottom: 10px;
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 135%;
+	color: #363738;
+}
+
+.clients__content-adres {
+	display: inline-block;
+	margin-bottom: 12px;
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 135%;
+	color: #6b6b6c;
+}
+
+.clients__content-tel-wrapper {
+	width: 100%;
+	max-width: 203px;
+}
+
+.clients__content-telstr {
+	display: inline-block;
+	margin-bottom: 12px;
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 135%;
+	color: #363738;
+}
+
+.clients__content-tel-text {
+	margin: 0;
+	margin-bottom: 10px;
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 135%;
+	color: #6b6b6c;
+}
+
+.clients__content-tel {
+	display: inline-block;
+	text-decoration: none;
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 135%;
+	color: #363738;
+}
+// mobile-max-width-630px
+
+.clients__content {
+	z-index: 1;
+	padding: 28px 32px 40px;
+	width: 100%;
+	max-width: 652px;
+	background-color: #ffffff;
+	border-radius: 8px;
+}
+
+.clients__content-top {
+	@include flex-starter;
+	justify-content: space-between;
+	padding-bottom: 32px;
+	border-bottom: 1px solid #d7d7dd;
+}
+
+.adress-wrapper {
+	width: 100%;
+	max-width: 274px;
+}
+
+.adress-content {
+	display: inline-block;
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 150%;
+	color: #6b6b6c;
+}
+
+.clients-menu {
+	@include flex-starter;
+	margin-top: 32px;
+	width: 100%;
+	max-width: 588px;
+	background-color: #0b7572;
+}
+
+.menu-item {
+	display: inline-block;
+	padding: 18px 0;
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 150%;
+	color: #ffffff;
+}
+
+.menu-item:nth-child(1) {
+	width: 100%;
+	max-width: 113px;
+	text-align: center;
+}
+
+.menu-item:nth-child(2) {
+	width: 100%;
+	max-width: 148px;
+	text-align: center;
+}
+
+.menu-item:nth-child(3) {
+	width: 100%;
+	max-width: 173px;
+	text-align: center;
+}
+
+.menu-item:nth-child(4) {
+	width: 100%;
+	max-width: 154px;
+	text-align: center;
+}
+
+.menu-item + .menu-item {
+	border-left: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.clients__list {
+	@include list-starter;
+	padding: 8px 16px 24px;
+	background-color: #f9f9fb;
+}
+
+.clients__item {
+	display: flex;
+}
+
+.clients__item + .clients__item {
+	border-top: 1px solid #d7d7dd;
+}
+
+.clients__item-img-wrapper {
+	width: 100%;
+	max-width: 97px;
+	padding: 16px 0 55px 0;
+}
+
+.clients__item-img {
+	display: inline-block;
+	width: 81px;
+	height: 74px;
+}
+
+.clients__item-text-wrapper {
+	width: 100%;
+	max-width: 148px;
+	padding: 16px 20px 16px 16px;
+	border-left: 1px solid #d7d7dd;
+	border-right: 1px solid #d7d7dd;
+}
+
+.clients__item-text {
+	margin: 0;
+	margin-bottom: 10px;
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 135%;
+	color: #6b6b6c;
+}
+
+.clients__item-money {
+	display: inline-block;
+	text-decoration: none;
+	font-family: 'Exo 2';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 135%;
+	color: #363738;
+}
+
+.clients__item-adres-wrapper {
+	width: 100%;
+	max-width: 173px;
+	padding: 16px 16px 16px 16px;
+}
+
+.clients__item-adstr {
+	display: inline-block;
+	margin-bottom: 10px;
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 135%;
+	color: #363738;
+}
+
+.clients__item-adres {
+	display: inline-block;
+	margin-bottom: 12px;
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 135%;
+	color: #6b6b6c;
+}
+
+.clients__item-tel-wrapper {
+	width: 100%;
+	max-width: 130px;
+	padding: 16px 8px 16px 16px;
+	border-left: 1px solid #d7d7dd;
+}
+
+.clients__item-telstr {
+	display: inline-block;
+	margin-bottom: 12px;
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 135%;
+	color: #363738;
+}
+
+.clients__item-tel-text {
+	margin: 0;
+	margin-bottom: 10px;
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 135%;
+	color: #6b6b6c;
+}
+
+.clients__item-tel {
+	display: inline-block;
+	text-decoration: none;
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 135%;
+	color: #363738;
+}
+
+@include max-width(1280px) {
+	.clients__wrapper {
+		width: 100%;
+		max-width: 328px;
+		margin-right: 40px;
+	}
+}
+
+@include max-width(1160px) {
+	.clients__inner {
+		flex-direction: column;
+	}
+
+	.clients__wrapper {
+		width: 100%;
+		max-width: 328px;
+		margin-right: 0;
+		margin-bottom: 48px;
+	}
+}
+
+@include max-width(885px) {
+	.clients__inner {
+		padding: 85px 20px 85px 20px;
+
+		&::before {
+			top: 0;
+			left: 0;
+			width: 536px;
+			height: 683px;
+			background-image: url('../images/clients-bg-tablet.png');
+		}
+	}
+}
+
+@include max-width(630px) {
+	.clients__inner {
+		padding: 40px 20px;
+
+		&::before {
+			top: 0;
+			left: 0;
+			width: 403px;
+			height: 515px;
+			background-image: url('../images/clients-bg-mobile.png');
+		}
+	}
+
+	.clients__wrapper {
+		width: 100%;
+		max-width: 345px;
+		margin-right: 0;
+		margin-bottom: 40px;
+	}
+
+	.clients__title {
+		font-size: 38px;
+	}
+
+	.clients__content {
+		display: none;
+	}
+
+	.clients__content-mobile {
+		display: block;
+	}
+}
+
+@include max-width(400px) {
+	.clients__inner {
+		padding: 32px 15px;
+	}
+
+	.clients__title {
+		font-size: 28px;
+	}
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min--moz-device-pixel-ratio: 2),
+	only screen and (-o-min-device-pixel-ratio: 2/1),
+	only screen and (min-device-pixel-ratio: 2),
+	only screen and (min-resolution: 192dpi),
+	only screen and (min-resolution: 2dppx) {
+	.clients__inner {
+		&::before {
+			background-image: url('../images/clients-bg@2x.png');
+		}
+	}
+
+	@include max-width(885px) {
+		.clients__inner {
+			&::before {
+				background-image: url('../images/clients-bg-tablet@2x.png');
+			}
+		}
+	}
+
+	@include max-width(630px) {
+		.clients__inner {
+			&::before {
+				background-image: url('../images/clients-bg-mobile@2x.png');
+			}
+		}
+	}
+}

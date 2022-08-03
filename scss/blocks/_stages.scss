@@ -315,12 +315,12 @@
 	.stages__inner {
 		&::before {
 			top: 193px;
-			left: 24px;
+			left: 3px;
 		}
 
 		&::after {
 			top: 475px;
-			left: 24px;
+			left: 3px;
 		}
 	}
 
@@ -329,7 +329,7 @@
 
 		&::after {
 			top: 758px;
-			left: 24px;
+			left: 3px;
 		}
 	}
 
@@ -353,19 +353,19 @@
 	.stages__inner {
 		&::before {
 			top: 193px;
-			left: 8px;
+			left: 2px;
 		}
 
 		&::after {
 			top: 475px;
-			left: 8px;
+			left: 2px;
 		}
 	}
 
 	.stages__title {
 		&::after {
 			top: 758px;
-			left: 8px;
+			left: 2px;
 		}
 	}
 }

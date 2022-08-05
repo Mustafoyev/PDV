@@ -2497,8 +2497,42 @@ main {
   color: #6b6b6c;
 }
 
-.works__pages--active {
+.trust__pages {
   display: none;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.trust__circle-one {
+  display: block;
+  position: relative;
+  margin-right: 17px;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #0b7572;
+  border-radius: 50%;
+}
+.trust__circle-one::before {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  bottom: 9px;
+  left: 9px;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #0b7572;
+  content: "";
+}
+
+.trust__circle {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #e9e9ec;
 }
 
 @media only screen and (max-width: 1252px) {
@@ -2694,7 +2728,7 @@ main {
     width: 100%;
     max-width: 173px;
   }
-  .works__pages--active {
+  .trust__pages {
     display: flex;
   }
 }
@@ -2970,5 +3004,248 @@ main {
   }
   .company__item-line {
     margin-bottom: 23px;
+  }
+}
+.contact {
+  padding-bottom: 140px;
+}
+
+.contact__title {
+  margin: 0;
+  margin-bottom: 72px;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 125%;
+  color: #363738;
+}
+
+.contact__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact__right-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.contact__right-item {
+  position: relative;
+  padding-left: 60px;
+}
+.contact__right-item::before {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 24px;
+  height: 32px;
+  background-image: url("../images/tel.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: "";
+}
+.contact__right-item:nth-child(2)::before {
+  width: 28px;
+  height: 18px;
+  background-image: url("../images/sms.svg");
+}
+.contact__right-item:nth-child(3)::before {
+  width: 28px;
+  height: 28px;
+  background-image: url("../images/whatsapp.svg");
+}
+.contact__right-item:nth-child(4)::before {
+  width: 28px;
+  height: 28px;
+  background-image: url("../images/skype.svg");
+}
+
+.contact__right-item + .contact__right-item {
+  margin-top: 44px;
+}
+
+.contact__item-subtitle {
+  display: block;
+  margin-bottom: 8px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #6b6b6c;
+}
+
+.contact__item-link {
+  text-decoration: none;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #363738;
+}
+
+.contact__left-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  max-width: 794px;
+  padding: 8px 72px 56px 48px;
+  background-color: #f9f9fb;
+  border-radius: 5px;
+}
+
+.contact__left-item {
+  display: flex;
+  padding: 32px 0 16px;
+  border-bottom: 1px solid #e9eaf2;
+}
+.contact__left-item:nth-child(5) {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.contact__left-subtitle {
+  display: block;
+  width: 100%;
+  max-width: 175px;
+  margin-right: 56px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: #6b6b6c;
+}
+
+.contact__left-content {
+  display: block;
+  margin: 0;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  color: #363738;
+}
+
+.contact__address-wrapper {
+  width: 100%;
+  max-width: 443px;
+}
+
+.contact__left-address {
+  display: block;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  color: #363738;
+}
+
+@media only screen and (max-width: 1120px) {
+  .contact__right-list {
+    margin-right: 30px;
+  }
+}
+@media only screen and (max-width: 870px) {
+  .contact {
+    padding-bottom: 88px;
+  }
+  .contact__title {
+    margin-bottom: 64px;
+    font-size: 44px;
+  }
+  .contact__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .contact__right-list {
+    margin-right: 0;
+    margin-bottom: 64px;
+  }
+  .contact__left-list {
+    width: 100%;
+    max-width: 690px;
+    padding: 0 37px 48px 28px;
+  }
+  .contact__left-subtitle {
+    margin-right: 16px;
+  }
+  .contact__address-wrapper {
+    width: 100%;
+    max-width: 434px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .contact {
+    padding-bottom: 64px;
+  }
+  .contact__title {
+    margin-bottom: 56px;
+    font-size: 28px;
+  }
+  .contact__right-list {
+    margin-bottom: 72px;
+  }
+  .contact__right-item {
+    padding-left: 64px;
+  }
+  .contact__right-item::before {
+    width: 24px;
+    height: 33px;
+    background-image: url("../images/tel-mobile.svg");
+  }
+  .contact__right-item:nth-child(2)::before {
+    width: 32px;
+    height: 20px;
+    background-image: url("../images/sms-mobile.svg");
+  }
+  .contact__right-item:nth-child(3)::before {
+    width: 32px;
+    height: 32px;
+    background-image: url("../images/whatsapp-mobile.svg");
+  }
+  .contact__right-item:nth-child(4)::before {
+    width: 32px;
+    height: 32px;
+    background-image: url("../images/skype-mobile.svg");
+  }
+  .contact__right-item + .contact__right-item {
+    margin-top: 48px;
+  }
+  .contact__item-subtitle {
+    margin-bottom: 12px;
+    font-size: 15px;
+  }
+  .contact__left-list {
+    width: 100%;
+    max-width: 690px;
+    min-width: 300px;
+    padding: 16px 38px 48px 24px;
+  }
+  .contact__left-item {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+  }
+  .contact__left-item:nth-child(5) {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+  .contact__left-subtitle {
+    margin-right: 0px;
+    margin-bottom: 14px;
+    font-size: 15px;
+  }
+  .contact__address-wrapper {
+    width: 100%;
+    min-width: 263px;
   }
 }/*# sourceMappingURL=main.css.map */

@@ -3248,4 +3248,205 @@ main {
     width: 100%;
     min-width: 263px;
   }
+}
+.contact-us__inner {
+  position: relative;
+  padding: 56px 0 56px 56px;
+}
+.contact-us__inner::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 699px;
+  height: 730px;
+  z-index: -1;
+  background-color: #0b7572;
+  background-repeat: no-repeat;
+  content: "";
+}
+.contact-us__inner::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 730px;
+  z-index: -2;
+  background-image: url("../images/contact-us-bg.jpg");
+  background-repeat: no-repeat;
+  content: "";
+}
+
+.contact-us__title {
+  margin: 0;
+  margin-bottom: 72px;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 125%;
+  color: #ffffff;
+}
+
+.contact-us__form {
+  width: 100%;
+  max-width: 579px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact-us__textarea {
+  width: 100%;
+  resize: none;
+  border: 0;
+  outline: none;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: #ffffff;
+  background-color: #0b7572;
+  background: repeating-linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0 1px, transparent 1px 48px) 0 28px/100% content-box no-repeat;
+}
+.contact-us__textarea::-moz-placeholder {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: #ffffff;
+}
+.contact-us__textarea:-ms-input-placeholder {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: #ffffff;
+}
+.contact-us__textarea::placeholder {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: #ffffff;
+}
+
+.contact-us__labels {
+  position: relative;
+  width: 100%;
+  max-width: 579px;
+  padding: 33px 0 19px 37px;
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 125%;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.contact-us__labels::before {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 21px;
+  height: 19px;
+  background-image: url("../images/input1.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  content: "";
+}
+.contact-us__labels:nth-child(2) {
+  padding-top: 13px;
+}
+.contact-us__labels:nth-child(3)::before {
+  top: 35px;
+  left: 0;
+  background-image: url("../images/add.svg");
+}
+
+.contact-us__btn {
+  width: 100%;
+  max-width: 206px;
+  display: block;
+  margin-top: 66px;
+  padding: 12px;
+  font-family: "Exo 2";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #0b7572;
+  background-color: #ffffff;
+  border: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-us__inner {
+    padding: 56px 64px 56px 56px;
+  }
+  .contact-us__inner::before {
+    width: 100%;
+  }
+  .contact-us__inner::after {
+    display: none;
+  }
+  .contact-us__title {
+    margin-bottom: 64px;
+    font-size: 44px;
+  }
+  .contact-us__form {
+    width: 100%;
+    max-width: 578px;
+  }
+  .contact-us__textarea {
+    width: 100%;
+    max-width: 578px;
+  }
+  .contact-us__labels {
+    width: 100%;
+    max-width: 578px;
+  }
+}
+@media only screen and (max-width: 512px) {
+  .contact-us__inner {
+    padding: 40px 16px 48px;
+  }
+  .contact-us__title {
+    margin-bottom: 48px;
+    font-size: 28px;
+  }
+  .contact-us__label {
+    margin-bottom: 46px;
+  }
+  .contact-us__textarea {
+    font-size: 15px;
+    background: repeating-linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0 1px, transparent 1px 40px) 0 28px/100% content-box no-repeat;
+  }
+  .contact-us__textarea::-moz-placeholder {
+    font-size: 15px;
+  }
+  .contact-us__textarea:-ms-input-placeholder {
+    font-size: 15px;
+  }
+  .contact-us__textarea::placeholder {
+    font-size: 15px;
+  }
+  .contact-us__labels {
+    font-size: 15px;
+  }
+  .contact-us__btn {
+    width: 100%;
+    max-width: 100%;
+    margin-top: 71px;
+    font-size: 15px;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .contact-us__inner::after {
+    background-image: url("../images/contact-us-bg@2x.jpg");
+  }
 }/*# sourceMappingURL=main.css.map */

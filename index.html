@@ -1617,6 +1617,7 @@
 									id="user-file"
 									type="file"
 									style="display: none"
+									multiple
 									required
 								/>
 								Прикрипите ТЗ
@@ -1628,6 +1629,7 @@
 									id="user-image"
 									type="file"
 									style="display: none"
+									multiple
 									required
 								/>
 								Добавьте фото товара
@@ -1640,15 +1642,192 @@
 				</div>
 			</section>
 			<!-- /contact-us-section -->
+			<!-- data-section -->
+			<section class="data">
+				<div class="container">
+					<div class="data__inner">
+						<h2 class="data__title">Ваши данные</h2>
+						<div class="data__content">
+							<h3 class="data__subtitle">Описание задачи</h3>
+							<p class="data__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit
+								duis tristique sollicitudin nibh sit amet. Ultrices eros in
+								cursus turpis massa tincidunt. Venenatis urna cursus eget nunc
+								scelerisque viverra mauris in. Pharetra convallis posuere morbi
+								leo urna. Eget sit amet tellus cras adipiscing.
+							</p>
+							<h3 class="data__subtitle">Техническое задание</h3>
+							<span class="data__content-span">ТЗ_задачи.doc</span>
+
+							<h3 class="data__subtitle-list">Фотографии товара</h3>
+							<ul class="data__list">
+								<li class="data__item">
+									<picture class="data__picture">
+										<!-- webp-image -->
+										<source
+											type="image/webp"
+											media="(max-width:576px)"
+											srcset="
+												images/data-mobile1.webp    1x,
+												images/data-mobile1@2x.webp 2x
+											"
+										/>
+										<source
+											type="image/webp"
+											srcset="
+												images/data-item1.webp    1x,
+												images/data-item1@2x.webp 2x
+											"
+										/>
+										<!-- png-image -->
+										<source
+											type="image/webp"
+											media="(max-width:576px)"
+											srcset="
+												images/data-mobile1.png    1x,
+												images/data-mobile1@2x.png 2x
+											"
+										/>
+
+										<img
+											class="data__item-img"
+											src="./images/data-item1.png"
+											srcset="
+												images/data-item1.png    1x,
+												images/data-item1@2x.png 2x
+											"
+											alt="Workbench"
+											width="175"
+											height="136"
+										/>
+									</picture>
+									<span class="data__item-span">IMG12344.jpg</span>
+								</li>
+								<li class="data__item">
+									<picture class="data__picture">
+										<!-- webp-image -->
+										<source
+											type="image/webp"
+											media="(max-width:576px)"
+											srcset="
+												images/data-mobile2.webp    1x,
+												images/data-mobile2@2x.webp 2x
+											"
+										/>
+										<source
+											type="image/webp"
+											srcset="
+												images/data-item2.webp    1x,
+												images/data-item2@2x.webp 2x
+											"
+										/>
+										<!-- png-image -->
+										<source
+											type="image/webp"
+											media="(max-width:576px)"
+											srcset="
+												images/data-mobile2.png    1x,
+												images/data-mobile2@2x.png 2x
+											"
+										/>
+
+										<img
+											class="data__item-img"
+											src="./images/data-item2.png"
+											srcset="
+												images/data-item2.png    1x,
+												images/data-item2@2x.png 2x
+											"
+											alt="Workbench"
+											width="175"
+											height="136"
+										/>
+									</picture>
+									<span class="data__item-span">IMG00344.png</span>
+								</li>
+								<li class="data__item">
+									<picture class="data__picture">
+										<!-- webp-image -->
+										<source
+											type="image/webp"
+											media="(max-width:576px)"
+											srcset="
+												images/data-mobile3.webp    1x,
+												images/data-mobile3@2x.webp 2x
+											"
+										/>
+										<source
+											type="image/webp"
+											srcset="
+												images/data-item3.webp    1x,
+												images/data-item3@2x.webp 2x
+											"
+										/>
+										<!-- png-image -->
+										<source
+											type="image/webp"
+											media="(max-width:576px)"
+											srcset="
+												images/data-mobile3.png    1x,
+												images/data-mobile3@2x.png 2x
+											"
+										/>
+
+										<img
+											class="data__item-img"
+											src="./images/data-item3.png"
+											srcset="
+												images/data-item3.png    1x,
+												images/data-item3@2x.png 2x
+											"
+											alt="Workbench"
+											width="175"
+											height="136"
+										/>
+									</picture>
+									<span class="data__item-span">IMG00544.png</span>
+								</li>
+							</ul>
+							<button class="data__btn" type="submit">
+								Подтвердить информацию
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /data-section -->
+			<!-- video-section -->
+			<section class="video">
+				<div class="container">
+					<div class="video__inner">
+						<h2 class="video__title">Видео о нашей работе</h2>
+						<div class="video__text-wrapper">
+							<p class="video__text">
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+								eiusmod tempor incididunt ut labore et dolore magna aliqua. Elit
+								duis tristique sollicitudin nibh sit amet. Ultrices eros in
+								cursus turpis massa tincidunt. Venenatis urna cursus eget nunc
+								scelerisque viverra mauris in. Pharetra convallis posuere morbi
+								leo urna. Eget sit amet tellus cras adipiscing.
+							</p>
+						</div>
+						<div class="video__iframe-wrapper">
+							<iframe
+								class="video__iframe"
+								width="560"
+								height="315"
+								src="https://www.youtube.com/embed/CpTb57YTw-8"
+								title="YouTube video player"
+								allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+								allowfullscreen
+							></iframe>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- /video-section -->
 		</main>
 		<!-- /site-main -->
-
-		<!-- site-footer -->
-		<footer class="site-footer">
-			<div class="container">
-				<div class="site-footer__inner"></div>
-			</div>
-		</footer>
-		<!-- /site-footer -->
 	</body>
 </html>
